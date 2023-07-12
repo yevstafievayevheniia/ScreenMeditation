@@ -1,0 +1,42 @@
+/* 
+  Localizable.strings
+  ScreenMeditation
+
+  Created by Yevstafieva Yevheniia on 12.07.2023.
+  
+*/
+
+
+//MARK: Main
+
+"app_title" = "Meditation";
+
+//MARK: Checkins
+
+"checkins_title" = "Check-ins Statistics";
+"checkins_monthly_title" = "Monthly check-ins";
+"checkins_rate_title" = "Monthly check-ins rate";
+"checkins_total_title" = "Total check-ins";
+"checkins_current_title" = "Current Streak";
+"checkins_days_label" = "Days";
+
+//MARK: Calendar
+
+"calendar_title" = "January";
+"calendar_san" = "San";
+"calendar_mon" = "Mon";
+"calendar_tue" = "Tue";
+"calendar_wed" = "Wed";
+"calendar_thu" = "Thu";
+"calendar_fri" = "Fri";
+"calendar_sat" = "Sat";
+
+//MARK: Yearly
+
+"yearly_title" = "Yearly Status";
+"yearly_year" = "2023";
+
+//MARK: Memous
+
+"memous_title" = "Memous";
+"memous_placeholder" = "No memous yet";

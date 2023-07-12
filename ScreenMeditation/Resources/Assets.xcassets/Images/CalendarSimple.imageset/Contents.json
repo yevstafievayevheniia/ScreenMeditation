@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "CalendarSimple.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
