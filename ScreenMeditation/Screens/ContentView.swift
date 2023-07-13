@@ -10,17 +10,17 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var memous: String = String()
+    @State private var memos: String = String()
 
     enum TextFieldID {
-        case memousSectionId
+        case memosSectionId
     }
     @State var scrollTarget: TextFieldID?
 
     private func endEditing() {
         UIApplication.shared.endEditing()
         scrollTarget = nil
-        memous = String()
+        memos = String()
     }
 
     var body: some View {
@@ -32,7 +32,7 @@ struct ContentView: View {
                             checkInStatisticsSection
                             calendarSection
                             yearlyStatusSection
-                            memousSection
+                            memosSection
                         }
                     }
                     .onChange(of: scrollTarget) { target in
@@ -82,7 +82,7 @@ extension ContentView {
     var checkInStatisticsSection: some View {
         ZStack {
             CheckinsView()
-            .padding()
+                .padding()
         }
         .border(.borderColor, width: 1, cornerRadius: 10)
     }
@@ -97,19 +97,19 @@ extension ContentView {
 
     var yearlyStatusSection: some View {
         ZStack {
-            YearlyView()
+            ChartView()
                 .padding()
         }
         .border(.borderColor, width: 1, cornerRadius: 10)
     }
 
-    var memousSection: some View {
+    var memosSection: some View {
         ZStack {
             VStack(alignment: .leading) {
-                Text("memous_title".localized)
+                Text("memos_title".localized)
                     .font(.body)
                     .fontWeight(.medium)
-                TextField("memous_placeholder".localized, text: $memous)
+                TextField("memos_placeholder".localized, text: $memos)
                     .font(.body)
                     .fontWeight(.medium)
                     .foregroundColor(Color.placeholderColor)
@@ -120,7 +120,7 @@ extension ContentView {
                     )
                     .simultaneousGesture(
                         TapGesture().onEnded {
-                            scrollTarget = .memousSectionId
+                            scrollTarget = .memosSectionId
                         }
                     )
                     .onSubmit {
@@ -131,7 +131,7 @@ extension ContentView {
             .padding()
         }
         .border(.borderColor, width: 1, cornerRadius: 10)
-        .id(TextFieldID.memousSectionId)
+        .id(TextFieldID.memosSectionId)
     }
 }
 

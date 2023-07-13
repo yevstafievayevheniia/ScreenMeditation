@@ -60,7 +60,7 @@
 		638F6EF12A5F3B48006905BB /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 638F6EDD2A5F3B48006905BB /* Gilroy-Bold.ttf */; };
 		638F6EF22A5F3B48006905BB /* Gilroy-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 638F6EDE2A5F3B48006905BB /* Gilroy-Heavy.ttf */; };
 		638F6EF52A5F3B72006905BB /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638F6EF42A5F3B72006905BB /* Fonts.swift */; };
-		638F6EF82A5F5124006905BB /* YearlyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638F6EF72A5F5124006905BB /* YearlyView.swift */; };
+		638F6EF82A5F5124006905BB /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638F6EF72A5F5124006905BB /* ChartView.swift */; };
 		638F6EFA2A5F5338006905BB /* CheckinsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638F6EF92A5F5338006905BB /* CheckinsView.swift */; };
 		638F6EFD2A5F5384006905BB /* CalendarSelectionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638F6EFC2A5F5384006905BB /* CalendarSelectionStyle.swift */; };
 		638F6EFF2A5F53D5006905BB /* StatisticCardStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638F6EFE2A5F53D5006905BB /* StatisticCardStyle.swift */; };
@@ -122,7 +122,7 @@
 		638F6EDE2A5F3B48006905BB /* Gilroy-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Heavy.ttf"; sourceTree = "<group>"; };
 		638F6EF42A5F3B72006905BB /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		638F6EF62A5F3D28006905BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		638F6EF72A5F5124006905BB /* YearlyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearlyView.swift; sourceTree = "<group>"; };
+		638F6EF72A5F5124006905BB /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		638F6EF92A5F5338006905BB /* CheckinsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinsView.swift; sourceTree = "<group>"; };
 		638F6EFC2A5F5384006905BB /* CalendarSelectionStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarSelectionStyle.swift; sourceTree = "<group>"; };
 		638F6EFE2A5F53D5006905BB /* StatisticCardStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticCardStyle.swift; sourceTree = "<group>"; };
@@ -158,14 +158,12 @@
 		638F6E802A5F2472006905BB /* ScreenMeditation */ = {
 			isa = PBXGroup;
 			children = (
-				638F6EFB2A5F5360006905BB /* Models */,
-				638F6EF62A5F3D28006905BB /* Info.plist */,
-				638F6E812A5F2472006905BB /* ScreenMeditationApp.swift */,
-				638F6E832A5F2472006905BB /* ContentView.swift */,
 				638F6E902A5F2655006905BB /* Main */,
+				638F6EFB2A5F5360006905BB /* Models */,
 				638F6E8F2A5F262A006905BB /* Screens */,
 				638F6E942A5F27DA006905BB /* Extensions & Utils */,
 				638F6E912A5F2673006905BB /* Resources */,
+				638F6EF62A5F3D28006905BB /* Info.plist */,
 				638F6E872A5F2474006905BB /* Preview Content */,
 			);
 			path = ScreenMeditation;
@@ -183,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				638F6E9B2A5F32A9006905BB /* Components */,
+				638F6E832A5F2472006905BB /* ContentView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -190,6 +189,7 @@
 		638F6E902A5F2655006905BB /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				638F6E812A5F2472006905BB /* ScreenMeditationApp.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -225,7 +225,7 @@
 				634C8FE02A5FE614005EFA72 /* MenuView.swift */,
 				638F6EF92A5F5338006905BB /* CheckinsView.swift */,
 				638F6E9C2A5F32BC006905BB /* CalendarView.swift */,
-				638F6EF72A5F5124006905BB /* YearlyView.swift */,
+				638F6EF72A5F5124006905BB /* ChartView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -417,7 +417,7 @@
 				638F6EFF2A5F53D5006905BB /* StatisticCardStyle.swift in Sources */,
 				634C8FE32A5FFBD1005EFA72 /* UIApplication.swift in Sources */,
 				638F6E982A5F28EE006905BB /* Color.swift in Sources */,
-				638F6EF82A5F5124006905BB /* YearlyView.swift in Sources */,
+				638F6EF82A5F5124006905BB /* ChartView.swift in Sources */,
 				638F6E9D2A5F32BC006905BB /* CalendarView.swift in Sources */,
 				638F6EA12A5F35ED006905BB /* Date.swift in Sources */,
 				634C8FE12A5FE614005EFA72 /* MenuView.swift in Sources */,

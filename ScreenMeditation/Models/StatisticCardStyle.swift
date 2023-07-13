@@ -12,7 +12,7 @@ enum StatisticCardStyle: Equatable {
     case monthlyCheckinsRate
     case totalCheckins
     case currentStreak
-
+    
     var icon: Image {
         switch self {
         case .monthlyCheckins:
@@ -25,7 +25,7 @@ enum StatisticCardStyle: Equatable {
             return .chartIcon
         }
     }
-
+    
     var title: String {
         switch self {
         case .monthlyCheckins:
@@ -38,7 +38,7 @@ enum StatisticCardStyle: Equatable {
             return "checkins_current_title".localized
         }
     }
-
+    
     var description: String {
         switch self {
         case .monthlyCheckins:
@@ -51,7 +51,7 @@ enum StatisticCardStyle: Equatable {
             return "24"
         }
     }
-
+    
     var value: String {
         switch self {
         case .monthlyCheckins:
@@ -64,7 +64,7 @@ enum StatisticCardStyle: Equatable {
             return "checkins_days_label".localized
         }
     }
-
+    
     var backgroundColor: Color {
         switch self {
         case .monthlyCheckins:

@@ -52,18 +52,6 @@ extension Color {
         Color("Viking").opacity(0.3)
     }
 
-    static var titleTextColor: Color {
-        Color("LightDark")
-    }
-
-    static var textFieldBackgroundColor: Color {
-        Color("DarkWhite2")
-    }
-
-    static var placeholderColor: Color {
-        Color("LightDark")
-    }
-
     //MARK: Calendar
 
     static var monthTitleColor: Color {
@@ -90,7 +78,35 @@ extension Color {
         Color("Purple")
     }
 
-    static var chartLineDateColor: Color {
-        Color("Purple")
+    //MARK: Chart
+
+    static var chartLineDateColor: LinearGradient {
+        LinearGradient(
+            gradient: Gradient(colors: [Color("White"), Color("Purple"), Color("White")]),
+            startPoint: .leading,
+            endPoint: .trailing
+        )
+    }
+
+    static var chartLollipopColor: LinearGradient {
+        LinearGradient(
+            gradient: Gradient(colors: [Color("Purple").opacity(0.5), Color("White")]),
+            startPoint: .top,
+            endPoint: .bottom
+        )
+    }
+
+    //MARK: Memos
+
+    static var titleTextColor: Color {
+        Color("LightDark")
+    }
+
+    static var textFieldBackgroundColor: Color {
+        Color("DarkWhite2")
+    }
+
+    static var placeholderColor: Color {
+        Color("LightDark")
     }
 }

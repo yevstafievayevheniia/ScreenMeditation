@@ -37,7 +37,7 @@
 "calendar_fri" = "Fri";
 "calendar_sat" = "Sat";
 
-//MARK: Yearly
+//MARK: Chart
 
 "yearly_title" = "Yearly Status";
 "yearly_year" = "2023";
@@ -50,5 +50,5 @@
 
 //MARK: Memous
 
-"memous_title" = "Memous";
-"memous_placeholder" = "No memous yet";
+"memos_title" = "Memos";
+"memos_placeholder" = "No memos yet";

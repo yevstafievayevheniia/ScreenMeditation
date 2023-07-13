@@ -77,7 +77,7 @@ struct CalendarView: View {
 
     var calendarGrid: some View {
         return VStack {
-            ForEach(0..<Date().getNumberOfWeeks(), id: \.self) { row in
+            ForEach(0..<Date().getNumberOfWeeks()-1, id: \.self) { row in
                 HStack(spacing: 1) {
                     ForEach(1..<8) { column in
                         let count = column + (row * 7) + 1

@@ -55,4 +55,10 @@ extension Image {
     static var chartIcon: Image {
         Image("Chart")
     }
+
+    //MARK: Chart
+    
+    static var chartDotIcon: Image {
+        Image("Dot")
+    }
 }

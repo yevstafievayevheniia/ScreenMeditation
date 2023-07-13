@@ -11,7 +11,7 @@ enum CalendarSelectionStyle: Equatable {
     case notFilled
     case partlyFilled
     case fullyFilled
-
+    
     var trimValue: (from: CGFloat, to: CGFloat) {
         switch self {
         case .notFilled:
@@ -22,7 +22,7 @@ enum CalendarSelectionStyle: Equatable {
             return (from: 0.25, to: 0.75)
         }
     }
-
+    
     var circleColor: Color {
         switch self {
         case .notFilled:
@@ -31,7 +31,7 @@ enum CalendarSelectionStyle: Equatable {
             return .filledLineDateColor
         }
     }
-
+    
     var backgroundColor: Color {
         switch self {
         case .notFilled, .partlyFilled:
