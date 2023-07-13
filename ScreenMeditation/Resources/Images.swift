@@ -24,6 +24,20 @@ extension Image {
         Image("ThreeDots")
     }
 
+    //MARK: Menu
+
+    static var editIcon: Image {
+        Image("Pencil")
+    }
+
+    static var archiveIcon: Image {
+        Image("ArhiveLoad")
+    }
+
+    static var deleteIcon: Image {
+        Image("TrashBox")
+    }
+
     //MARK: Checkins
 
     static var calendarSimpleIcon: Image {

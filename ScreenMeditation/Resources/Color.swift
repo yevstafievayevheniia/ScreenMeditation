@@ -10,13 +10,20 @@ import SwiftUI
 
 extension Color {
 
-    
+    //MARK: Main
+
     static var appBackgroundColor: Color {
         Color("White")
     }
     
     static var borderColor: Color {
         Color("DarkWhite")
+    }
+
+    //MARK: Menu
+
+    static var menuItemColor: Color {
+        Color("DeepCove")
     }
 
     //MARK: Checkins
@@ -50,7 +57,7 @@ extension Color {
     }
 
     static var textFieldBackgroundColor: Color {
-        Color("DoubleDarkWhite")
+        Color("DarkWhite2")
     }
 
     static var placeholderColor: Color {
@@ -80,6 +87,10 @@ extension Color {
     }
 
     static var filledLineDateColor: Color {
+        Color("Purple")
+    }
+
+    static var chartLineDateColor: Color {
         Color("Purple")
     }
 }

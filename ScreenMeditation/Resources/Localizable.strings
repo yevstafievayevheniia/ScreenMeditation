@@ -11,6 +11,12 @@
 
 "app_title" = "Meditation";
 
+//MARK: Menu
+
+"menu_edit" = "Edit";
+"menu_archive" = "Archive";
+"menu_delete" = "Delete";
+
 //MARK: Checkins
 
 "checkins_title" = "Check-ins Statistics";
@@ -35,6 +41,12 @@
 
 "yearly_title" = "Yearly Status";
 "yearly_year" = "2023";
+"yearly_jan" = "Jan";
+"yearly_mar" = "Mar";
+"yearly_may" = "May";
+"yearly_jul" = "Jul";
+"yearly_sep" = "Sep";
+"yearly_nov" = "Nov";
 
 //MARK: Memous
 

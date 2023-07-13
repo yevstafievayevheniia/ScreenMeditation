@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		634C8FE12A5FE614005EFA72 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634C8FE02A5FE614005EFA72 /* MenuView.swift */; };
+		634C8FE32A5FFBD1005EFA72 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634C8FE22A5FFBD1005EFA72 /* UIApplication.swift */; };
+		634C8FE52A600012005EFA72 /* AnimatedAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634C8FE42A600012005EFA72 /* AnimatedAction.swift */; };
 		638F6E822A5F2472006905BB /* ScreenMeditationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638F6E812A5F2472006905BB /* ScreenMeditationApp.swift */; };
 		638F6E842A5F2472006905BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638F6E832A5F2472006905BB /* ContentView.swift */; };
 		638F6E862A5F2474006905BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638F6E852A5F2474006905BB /* Assets.xcassets */; };
@@ -64,6 +67,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		634C8FE02A5FE614005EFA72 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		634C8FE22A5FFBD1005EFA72 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		634C8FE42A600012005EFA72 /* AnimatedAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedAction.swift; sourceTree = "<group>"; };
 		638F6E7E2A5F2472006905BB /* ScreenMeditation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenMeditation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		638F6E812A5F2472006905BB /* ScreenMeditationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenMeditationApp.swift; sourceTree = "<group>"; };
 		638F6E832A5F2472006905BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -207,6 +213,8 @@
 				638F6E952A5F27F3006905BB /* String.swift */,
 				638F6E9E2A5F33B9006905BB /* View.swift */,
 				638F6EA02A5F35ED006905BB /* Date.swift */,
+				634C8FE22A5FFBD1005EFA72 /* UIApplication.swift */,
+				634C8FE42A600012005EFA72 /* AnimatedAction.swift */,
 			);
 			path = "Extensions & Utils";
 			sourceTree = "<group>";
@@ -214,6 +222,7 @@
 		638F6E9B2A5F32A9006905BB /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				634C8FE02A5FE614005EFA72 /* MenuView.swift */,
 				638F6EF92A5F5338006905BB /* CheckinsView.swift */,
 				638F6E9C2A5F32BC006905BB /* CalendarView.swift */,
 				638F6EF72A5F5124006905BB /* YearlyView.swift */,
@@ -402,13 +411,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				634C8FE52A600012005EFA72 /* AnimatedAction.swift in Sources */,
 				638F6EFD2A5F5384006905BB /* CalendarSelectionStyle.swift in Sources */,
 				638F6E962A5F27F3006905BB /* String.swift in Sources */,
 				638F6EFF2A5F53D5006905BB /* StatisticCardStyle.swift in Sources */,
+				634C8FE32A5FFBD1005EFA72 /* UIApplication.swift in Sources */,
 				638F6E982A5F28EE006905BB /* Color.swift in Sources */,
 				638F6EF82A5F5124006905BB /* YearlyView.swift in Sources */,
 				638F6E9D2A5F32BC006905BB /* CalendarView.swift in Sources */,
 				638F6EA12A5F35ED006905BB /* Date.swift in Sources */,
+				634C8FE12A5FE614005EFA72 /* MenuView.swift in Sources */,
 				638F6E9A2A5F2F15006905BB /* Images.swift in Sources */,
 				638F6E842A5F2472006905BB /* ContentView.swift in Sources */,
 				638F6EFA2A5F5338006905BB /* CheckinsView.swift in Sources */,

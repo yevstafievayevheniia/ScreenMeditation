@@ -12,20 +12,40 @@ struct ContentView: View {
     
     @State private var memous: String = String()
 
-    
+    enum TextFieldID {
+        case memousSectionId
+    }
+    @State var scrollTarget: TextFieldID?
+
+    private func endEditing() {
+        UIApplication.shared.endEditing()
+        scrollTarget = nil
+        memous = String()
+    }
+
     var body: some View {
         NavigationView {
             ZStack {
-                ScrollView(showsIndicators: false) {
-                    VStack {
-                        checkInStatisticsSection
-                        calendarSection
-                        yearlyStatusSection
-                        memousSection
+                ScrollViewReader { proxy in
+                    ScrollView(.vertical, showsIndicators: false) {
+                        VStack {
+                            checkInStatisticsSection
+                            calendarSection
+                            yearlyStatusSection
+                            memousSection
+                        }
+                    }
+                    .onChange(of: scrollTarget) { target in
+                        if let target = target {
+                            AnimatedAction.execute {
+                                scrollTarget = nil
+                                proxy.scrollTo(target, anchor: .center)
+                            }
+                        }
                     }
                 }
-                .ignoresSafeArea()
-                .padding()
+                .ignoresSafeArea(.container, edges: .bottom)
+                .padding(10)
             }
             .navigationTitle(
                 Text("app_title".localized)
@@ -37,8 +57,11 @@ struct ContentView: View {
                     backButton
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    moreButton
+                    MenuView()
                 }
+            }
+            .onTapGesture {
+                self.endEditing()
             }
         }
     }
@@ -46,21 +69,13 @@ struct ContentView: View {
 
 
 extension ContentView {
+    
     var backButton: some View {
         Button {
             //TODO: Add backButton functionality
             print("[ContentView]: backButton tapped")
         } label: {
             Image.backIcon
-        }
-    }
-
-    var moreButton: some View {
-        Button {
-            //TODO: Add moreButton functionality
-            print("[ContentView]: moreButton tapped")
-        } label: {
-            Image.moreIcon
         }
     }
 
@@ -103,10 +118,20 @@ extension ContentView {
                         RoundedRectangle(cornerRadius: 10)
                             .fill(Color.textFieldBackgroundColor)
                     )
+                    .simultaneousGesture(
+                        TapGesture().onEnded {
+                            scrollTarget = .memousSectionId
+                        }
+                    )
+                    .onSubmit {
+                        self.endEditing()
+                    }
+                    .submitLabel(.done)
             }
             .padding()
         }
         .border(.borderColor, width: 1, cornerRadius: 10)
+        .id(TextFieldID.memousSectionId)
     }
 }
 
